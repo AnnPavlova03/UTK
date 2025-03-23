@@ -1,0 +1,35 @@
+.button {
+  padding: 16px 32px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background: transparent;
+  transition: all 0.3s ease;
+  &:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+  &:disabled {
+    background: #bec5cc;
+  }
+  @media (width <= 440px) {
+    padding: 12px 24px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.buttonAccent{
+    background: linear-gradient(135deg, #ff5e56, #dc3131);
+    box-shadow: 0 0 24px 0 #EA002954;
+    width: 100%;
+    transition: all 0.3s ease;
+    &:hover{
+        background: #EA0029;
+        color: #ffffff;
+      
+    }
+
+}

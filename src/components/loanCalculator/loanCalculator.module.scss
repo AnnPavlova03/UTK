@@ -1,0 +1,107 @@
+.loanCalculator {
+  max-width: 552px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 32px;
+  width: 100%;
+
+  @media (width <= 440px) {
+    padding: 32px 16px 16px;
+    height: 100vh;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  padding-block-end: 6px;
+  @media (width <= 440px) {
+    font-size: 18px;
+    line-height: 24px;
+    padding-block-end: 16px;
+  }
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+  padding-block-end: 10px;
+
+  @media (width <= 440px) {
+    font-size: 12px;
+    line-height: 16px;
+    padding-block-end: 8px;
+  }
+}
+.subTitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+  &_accent {
+    color: #ea0029;
+    cursor: pointer;
+  }
+}
+.wrapper_input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-block-end: 8px;
+}
+.input {
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px solid #dfe3e6;
+  border-radius: 3px;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #bec5cc;
+  }
+  &_error {
+    border: 1px solid #ea0029;
+  }
+}
+.wrapper_options {
+  display: flex;
+  gap: 38px;
+  padding-block-start: 16px;
+  padding-inline-end: 20px;
+  align-items: center;
+  @media (width <= 440px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    padding-block-start: 24px;
+  }
+}
+.options {
+  display: flex;
+  gap: 8px;
+  &_button {
+    width: 41px;
+    height: 36px;
+    border-radius: 50px;
+    background: #eef0f2;
+    &_active {
+      background: linear-gradient(135deg, #ff5e56, #dc3131);
+      color: #ffffff;
+    }
+  }
+}
+
+.buttonWrapper {
+  padding-block-start: 48px;
+  margin-top: auto;
+}
+
+.error {
+  color: #ea0029;
+  font-size: 10px;
+  line-height: 12px;
+}

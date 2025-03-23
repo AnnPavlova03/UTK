@@ -1,0 +1,36 @@
+.loanResult {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-block-start: 22px;
+}
+
+.subTitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.payment {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-block-start: 20px;
+}
+
+.toggleButtons {
+  display: flex;
+  gap: 6px;
+}
+
+.toggleButton {
+  padding: 6px 12px;
+  border-radius: 50px;
+  background: #eef0f2;
+  font-size: 14px;
+  line-height: 24px;
+  &_active {
+    background: linear-gradient(135deg, #ff5e56, #dc3131);
+    color: #ffffff;
+  }
+}
